@@ -19,7 +19,7 @@ opponent_total_score: int = 0
 my_total_score: int = 0
 
 for round in round_list:
-    round.strip()
+    round = round.strip()
 
     opponent_choice: str = round.split()[0]
     opponent_choice_index: int = opponent_choices.index(opponent_choice)

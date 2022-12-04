@@ -14,7 +14,7 @@ elf_group: list[str] = []
 # Build the 1d input array to the 2d array of elf groups
 rucksack_tracker: int = 0
 for rucksack in rucksack_list:
-    rucksack.strip()
+    rucksack = rucksack.strip()
     elf_group.append(rucksack)
 
     rucksack_tracker += 1

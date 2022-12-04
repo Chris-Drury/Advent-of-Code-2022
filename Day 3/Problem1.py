@@ -11,7 +11,7 @@ rucksack_list: list[str] = open(input_name, "r").readlines()
 sum_of_priorities: int = 0
 
 for rucksack in rucksack_list:
-    rucksack.strip()
+    rucksack = rucksack.strip()
 
     first_compartment: str = rucksack[:len(rucksack) // 2]
     second_compartment: str = rucksack[len(rucksack) // 2:]

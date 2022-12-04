@@ -15,7 +15,6 @@ elf_calories: float = 0
 
 # For each calorie, add to local calories, if highest record.
 for calorie in calories_list:
-
     calorie = calorie.strip()
 
     if calorie:
