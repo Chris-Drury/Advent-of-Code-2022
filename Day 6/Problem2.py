@@ -20,8 +20,6 @@ while packet_index < len(input):
             unique_marker = False
             break
 
-
-
     if unique_marker:
         print("unique marker: ", marker, " at index: ", packet_index)
         break
