@@ -2,8 +2,8 @@ namespace Day8
 {
     class Tree
     {
-        public int height {get;}
-        public bool visible {get; set;}
+        internal int height {get;}
+        internal bool visible {get; set;}
 
         public Tree(char heightChar, bool visible)
         {
