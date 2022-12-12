@@ -4,16 +4,17 @@
     {
         static private List<BridgePoint> tailLocations = new List<BridgePoint>();
         static private List<BridgePoint> finalTailLocations = new List<BridgePoint>();
-        static private int tailCount = 9;
+        static private int tailCount; // 1 for problem 1, 9 for 2
 
         static void Main(string[] args)
         { 
+            tailCount = int.Parse(args[0]);
+            
             // Initialize for 9 points
             for (int i = 0; i < tailCount; i++)
             {
                 tailLocations.Add(new BridgePoint(0,0));
             }
-
 
             string[] movementInput = System.IO.File.ReadAllLines("input.txt");
 

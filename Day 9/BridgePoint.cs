@@ -31,11 +31,16 @@ namespace Day9
             y--;
         }
 
-        public override bool Equals(Object obj)
+        public override bool Equals(Object? obj)
         {
             return (obj is BridgePoint) && 
                 ((BridgePoint)obj).x == x && 
                 ((BridgePoint)obj).y == y;
+        }
+        
+        public override int GetHashCode()
+        {
+            return x + y;
         }
     }
 }
